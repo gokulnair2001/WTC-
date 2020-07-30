@@ -1,0 +1,6 @@
+framework module Pods_WTC_ {
+  umbrella header "Pods-WTC!-umbrella.h"
+
+  export *
+  module * { export * }
+}

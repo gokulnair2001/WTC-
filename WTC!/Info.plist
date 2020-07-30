@@ -20,6 +20,33 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.gokul.0</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Find Recipies </string>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeSearch</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.gokul.1</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Nutrients </string>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeLove</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.gokul.1</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Settings</string>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeTask</string>
+		</dict>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -50,8 +77,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -60,5 +85,74 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key> CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>120-1_60pt</string>
+			</array>
+		</dict>
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<key>grey</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>grey</string>
+				</array>
+			</dict>
+			<key>purple</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>purple</string>
+				</array>
+			</dict>
+			<key>pink</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>pink</string>
+				</array>
+			</dict>
+			<key>orange</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>orange</string>
+				</array>
+			</dict>
+			<key>green</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>green</string>
+				</array>
+			</dict>
+			<key>magenta</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>magenta</string>
+				</array>
+			</dict>
+			<key>black</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>black</string>
+				</array>
+			</dict>
+			<key>skin</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>skin</string>
+				</array>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

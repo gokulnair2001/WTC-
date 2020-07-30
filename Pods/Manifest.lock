@@ -1,0 +1,28 @@
+PODS:
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Charts
+  - Kingfisher
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - Kingfisher
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: f05e25f6eb0103a32a5c62a8b8685cf74d5220ec
+
+COCOAPODS: 1.9.3
