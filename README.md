@@ -34,10 +34,10 @@ who are pretty confused while cooking food, Who think a lot and waste their time
 * After reading it close the board.🏳️
 * Then you will get an option of search bar, Type that one key Ingredient, for which you have to find recipe.🔥
 * Then Click on the recipe which you found good and you will get the whole list of health label as well as the recipe of that dish.🥗 
-(Remember while searching dont give space)
+(Remember while searching don't give space eg: "Apple", "Banana")
 * Near to the recipe image you can get the option of charts as well as the nutritional labels.♨️
 * You can also find the nutrition of your favourite food by searching it in the search bar of Nutrition tab.📊 
-(Remember while searching you must enter : 1egg, 2apple; and dont give space) 
+(Remember while searching you must enter : "1egg", "2apple"; and dont give space) 
 * See how simple it is ☺️
 
 # Libraries Used In Project 📒 
