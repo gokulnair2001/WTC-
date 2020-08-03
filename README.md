@@ -37,7 +37,7 @@ who are pretty confused while cooking food, Who think a lot and waste their time
 (Remember while searching don't give space eg: "Apple", "Banana","Grapes")
 * Near to the recipe image you can get the option of charts as well as the nutritional labels.♨️
 * You can also find the nutrition of your favourite food by searching it in the search bar of Nutrition tab.📊 
-(Remember while searching you must enter : "1egg", "2apple"; and dont give space) 
+(Remember while searching you must enter : "1Egg", "2apple"; and dont give space) 
 * See how simple it is ☺️
 
 # Libraries Used In Project 📒 
