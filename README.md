@@ -11,7 +11,7 @@ WTC is an app used to find recipies and to get nutritional content of a particul
 ![badge](https://img.shields.io/badge/iOS-13-blue)
 ![badge](https://img.shields.io/badge/Platfrom-iOS-orange)
 ![Badge](https://img.shields.io/badge/Recipe-Application-yellowgreen)
-![Badge](https://img.shields.io/badge/Nutrition-App-black)
+![Badge](https://img.shields.io/badge/Nutrition-App-alert)
 
 # Introduction ⚒  
 WTC!-(What to Cook!), basically WTC helps the user to find 100+ recepies with help of one key ingredient. The user can get 100+ recipes with single search.Not only this the user
