@@ -25,7 +25,7 @@ who are pretty confused while cooking food, Who think a lot and waste their time
 * Open project file in terminal. 💻
 * Run pod intall to install all dependencies. 📥
 * Open the WTC!.workspace file. 💾
-* Change the bundle identifier. ⚙️
+* Change the bundle Identifier. ⚙️
 * Press Ctrl + R to run the app. 📲
 * Do star this repo and/or contribute if you like it.🙂 
 
