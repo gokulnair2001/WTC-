@@ -19,11 +19,33 @@ class MainViewController: UIViewController{
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var refreshButton: UIButton!
     
+    let activityIndicator = UIActivityIndicatorView()
+       var overlayView = UIView()
     
     var recipe = recipeManager()
     var haptick = haptickFeedback()
     var model: [item]?
     
+    private func startAnimation(){
+           activityIndicator.startAnimating()
+           overlayView.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
+           overlayView.center = view.center
+           overlayView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+           overlayView.clipsToBounds = true
+           overlayView.layer.cornerRadius = 10
+           activityIndicator.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+           activityIndicator.center = CGPoint(x: overlayView.bounds.width / 2, y: overlayView.bounds.height / 2)
+           activityIndicator.style = .medium
+           activityIndicator.style = .large
+           
+           overlayView.addSubview(activityIndicator)
+           view.addSubview(overlayView)
+       }
+       
+       private func stopAnimation(){
+           activityIndicator.stopAnimating()
+           overlayView.removeFromSuperview()
+       }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +55,7 @@ class MainViewController: UIViewController{
         tableView.tableFooterView = UIView()
         
         pushNotification()
-       
+        
         if core.shared.isNewUser() {
             let vc = storyboard?.instantiateViewController(identifier: "welcome") as! OnBoardingViewController
             present(vc, animated: true)
@@ -85,8 +107,9 @@ extension MainViewController: UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         
-        if let Item = SearchBar.text {
-            self.recipe.jsonParsing(ingredient: Item)
+        if let Item = SearchBar.text?.trimmingCharacters(in: .whitespaces) {
+            let newText = Item.replacingOccurrences(of: " ", with: "") // written this to remove spaces between
+            self.recipe.jsonParsing(ingredient: newText)
         }
         
         SearchBar.text = ""
@@ -161,11 +184,11 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             //print("hellllll")
             vc.model = recipe.arrData[tableView.indexPathForSelectedRow!.row]
         }
-                
-      
-        }
+        
+        
     }
-    
+}
+
 //MARK:- NotificationStuffs
 
 extension MainViewController {
@@ -173,52 +196,63 @@ extension MainViewController {
     //MARK:- Ask Permission of user
     func pushNotification() {
         
-      let state = UIApplication.shared.applicationState
-      if state == .inactive {
-        
-        self.notification()
-          
-      }
-      else if state == .inactive || state == .background{
-        
-        self.notification()
-        
+        let state = UIApplication.shared.applicationState
+        if state == .inactive {
+            
+            self.notification()
+            
+        }
+        else if state == .inactive || state == .background{
+            
+            self.notification()
+            
         }
         
-       
+        
     }
     //MARK:- Notification code func
     
     func notification() {
-               let center = UNUserNotificationCenter.current()
-                      center.requestAuthorization(options: [.alert, .sound])
-                      {
-                          (granted,error) in
-                      }
-                      //MARK:- create notification content
-                      
-                      let content = UNMutableNotificationContent()
-                      content.title = "WTC!-Cook Something New"
-                      content.body = "Hey!, You just forgot to look whats going on in your Kitchen, want to try something new, Get into WTC!"
-                      
-                      //MARK:- To trigger the Notification
-                      
-                      let date = Date().addingTimeInterval(15)
-                      
-                      let dateComponent = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
-                      
-                      let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
-                      
-                      //MARK:- Create the request
-                      
-                      let uuidString = UUID().uuidString
-                      
-                      let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
-                      
-                      center.add(request){(error) in}
-           }
-          
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound])
+        {
+            (granted,error) in
+        }
+        //MARK:- create notification content
+        
+        let content = UNMutableNotificationContent()
+        content.title = "WTC!-Cook Something New"
+        content.body = "Hey!, You just forgot to look whats going on in your Kitchen, want to try something new, Get into WTC!"
+        
+        //MARK:- To trigger the Notification
+        
+        let date = Date().addingTimeInterval(15)
+        
+        let dateComponent = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
+        
+        //MARK:- Create the request
+        
+        let uuidString = UUID().uuidString
+        
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        
+        center.add(request){(error) in}
+    }
+    
 }
+
+//MARK:-  Alert function to show no item found
+
+extension MainViewController {
+    func alertFunc(){
+        let alert = UIAlertController(title: "No Item Found", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alert, animated: true)
+    }
+}
+
 
 //MARK:-  Onboarding Code
 
