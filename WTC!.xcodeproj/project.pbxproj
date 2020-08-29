@@ -148,10 +148,6 @@
 		5561EBAD24AF7352005C7A9B = {
 			isa = PBXGroup;
 			children = (
-				55D5609824C8622E007AAE09 /* Notification */,
-				5560AC1324BA0F09004A452B /* Change App Icon */,
-				559FE0D724B9D03700DA2F26 /* Settings Utellities */,
-				552B69E324B8BDD8003225D2 /* Services */,
 				5561EBB824AF7352005C7A9B /* WTC! */,
 				5561EBB724AF7352005C7A9B /* Products */,
 				D1BC14A157743A152730E01F /* Pods */,
@@ -170,6 +166,10 @@
 		5561EBB824AF7352005C7A9B /* WTC! */ = {
 			isa = PBXGroup;
 			children = (
+				55D5609824C8622E007AAE09 /* Notification */,
+				5560AC1324BA0F09004A452B /* Change App Icon */,
+				559FE0D724B9D03700DA2F26 /* Settings Utellities */,
+				552B69E324B8BDD8003225D2 /* Services */,
 				5561EBB924AF7352005C7A9B /* AppDelegate.swift */,
 				5561EBBB24AF7352005C7A9B /* SceneDelegate.swift */,
 				55D14A8B24AF742B00C75015 /* View */,

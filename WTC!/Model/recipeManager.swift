@@ -51,10 +51,10 @@ class recipeManager {
     
     func jsonParsing(ingredient: String) { 
         
-          let urlString = URL(string:"\(RecipeUrl1)q=\(ingredient)\(RecipeUrl2)")
+        let urlString = URL(string:"\(RecipeUrl1)q=\(ingredient)\(RecipeUrl2)")
         URLSession.shared.dataTask(with: urlString!){(data, response, error) in 
             guard let data = data else {return}
-           
+            
             do {
                 let json = try JSON(data:data)
                 
@@ -84,20 +84,26 @@ class recipeManager {
                     self.infoDataP.append(infoP(json: procnt))
                     let water = arr["recipe"]["totalNutrients"]["WATER"] //For ennergy label
                     self.infoDataW.append(infoW(json: water))
-                   
-                    DispatchQueue.main.async {
-                        
-                        self.model?.tableView.reloadData()
-                        self.model?.tableView.reloadSectionIndexTitles()
-                        self.model?.tableView.reloadInputViews()
-                        
-                    }
+                    
                 }
                 print(self.infoDataP)
+                DispatchQueue.main.async {
+                    
+                    self.model?.tableView.reloadData()
+                    self.model?.tableView.reloadSectionIndexTitles()
+                    self.model?.tableView.reloadInputViews()
+                    
+                }
+                
+                if self.arrData.count == 0 {
+                    print("Found Nil")
+                }else{
+                    print("all OK")
+                }
                 
             }catch{
                 self.model?.didFailWithError(error: error)
-               
+                
             }
             
         }.resume()
@@ -125,13 +131,13 @@ class recipeManager {
                 
                 
                 let HlthLabels = json["healthLabels"]
-               // self.nutriHlthData.append(HlthLabel(json: HlthLabels))
+                // self.nutriHlthData.append(HlthLabel(json: HlthLabels))
                 let Calories = json["calories"]
                 self.caloriData.append(calories(json:Calories))
                 let DietLabels = json["dietLabels"]
                 //self.dietData.append(dietLabels(json: DietLabels))
                 let Cautions = json["cautions"]
-               // self.cautiondata.append(cautions(json: Cautions))
+                // self.cautiondata.append(cautions(json: Cautions))
                 let energy = json["totalNutrients"]["ENERC_KCAL"]
                 self.nutriDataE.append(NutriEnergy(json:energy))
                 let fat = json["totalNutrients"]["FAT"]
@@ -158,14 +164,14 @@ class recipeManager {
                 print(self.nutriDataP)
                 print(self.nutriDataW)
             }
-            
+                
             catch {
                 print(error.localizedDescription)
             }
         }.resume()
-         
-}
-
-
+        
+    }
+    
+    
 }
 
