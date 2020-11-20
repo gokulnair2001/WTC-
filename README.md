@@ -1,6 +1,6 @@
 # WTC! - What To Cook
 
-WTC is an app used to find recipies and to get nutritional content of a particular food.
+WTC is an App used to find recipies and to get nutritional content of a particular food.
 
 ![Badge](https://img.shields.io/badge/License-MIT-yellow) 
 ![Badge](https://img.shields.io/badge/Pod-SwiftyJSON-pink) 
