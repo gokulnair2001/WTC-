@@ -4,7 +4,7 @@ WTC is an App used to find recipies and to get nutritional content of a particul
 
 ![Badge](https://img.shields.io/badge/License-MIT-yellow) 
 ![Badge](https://img.shields.io/badge/Pod-SwiftyJSON-pink) 
-![Badge](https://img.shields.io/badge/Pod-Kingfisher-orange) 
+![Bade](https://img.shields.io/badge/Pod-Kingfisher-orange) 
 ![Badge](https://img.shields.io/badge/Pod-Charts-gold) 
 ![Badge](https://img.shields.io/badge/Xcode-11.6-green)
 ![badge](https://img.shields.io/badge/Swift-5.0-red)
