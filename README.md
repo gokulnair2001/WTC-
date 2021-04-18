@@ -82,10 +82,24 @@ MIT License<br> Please read the [License](https://github.com/gokulnair2001/WTC-/
 * Latency of 945ms 
 * Sucess Rate 95%
 
-# Like the Project ?
-If you like WTC! please consider buying me a coffee 🥰
+## Project Admin 👨🏻‍💻
 
-[<img width="200" alt="BMC logo+wordmark - Black" src="https://user-images.githubusercontent.com/56252259/98195548-0c55fb80-1f48-11eb-8293-02131a0d908c.png">](https://www.buymeacoffee.com/gokulnair)
+[![Relative date](https://img.shields.io/date/1577392258?color=important&label=started&logo=github)](https://github.com/Loafjet/Loafjet) [![Maintenance](https://img.shields.io/maintenance/yes/2021?color=green&logo=github)](https://github.com/gokulnair2001/)
+
+|                                                                                         <a href="https://gokulnair2001.wixsite.com/mysite"><img src="https://user-images.githubusercontent.com/56252259/114967115-7aa4cf80-9e91-11eb-9e66-29830f72c018.jpg" width=140px height=180px /></a>                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                                                                                        **[Gokul Nair](https://www.linkedin.com/in/gokul-r-nair/)**                                                                                                                                        |
+| <a href="https://www.instagram.com/_gokul_r_nair_/"><img src="https://user-images.githubusercontent.com/56252259/114969025-24d22680-9e95-11eb-848d-b20e73269c4c.png" width="32px" height="32px"></a> <a href="https://twitter.com/GokulNair2303"><img src="https://user-images.githubusercontent.com/56252259/114967867-d6bc2380-9e92-11eb-8f89-c437f39a45de.png" width="32px" height="32px"></a>  <a href="https://www.linkedin.com/in/gokul-r-nair/"><img src="https://user-images.githubusercontent.com/56252259/114967871-d7ed5080-9e92-11eb-8781-cd7cf9bb52db.png" width="32px" height="32px"></a> |
+
+
+## Like the Project ?
+If you like using any of my projects or like what I'm doing, please consider backing me with appreciating my work: [Message me](https://twitter.com/GokulNair2303)🥰
+
+[<img width="200" alt="BMC logo+wordmark - Black" src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png">](https://www.buymeacoffee.com/gokulnair)
+
+OR
+
+**Drop a star ⭐ if you find this project interesting!**
 
 
 # Imortant Message 
